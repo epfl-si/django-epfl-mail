@@ -26,6 +26,8 @@ pip install django-epfl-mail
 Documentation
 -------------
 
+### Setup
+
 Add `'django_epflmail'` to your `INSTALLED_APPS` setting.
 
 ```python
@@ -35,14 +37,39 @@ INSTALLED_APPS = [
 ]
 ```
 
-Example template:
+### Example template
+
+```python
+from django.core.mail.message import EmailMessage
+from django.template.loader import render_to_string
+
+html = render_to_string("example.html", {"APP_TITLE": "Example"})
+email = EmailMessage(
+    "Email Example", html, "from@example.com", ["to@example.com"]
+)
+email.send()
+```
 
 ```htmldjango
 {% extends "epflmail/default.html" %}
+{% load i18n %}
 
+{% block title %}
+Email Example
+{% endblock %}
+
+{% block online %}
+  {% with ONLINE_VERSION_LINK="https://example.com" %}
+    {% include 'epflmail/includes/online.inc.html'%}
+  {% endwith %}
+{% endblock %}
 
 {% block main %}
-Example
+  <p>This is an example.</p>
+{% endblock %}
+
+{% block unsubscribe %}
+  <a href="https://example.com">Unsubscribe link</a>
 {% endblock %}
 ```
 

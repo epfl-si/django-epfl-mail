@@ -1,6 +1,14 @@
 {% extends "epflmail/default.html" %}
 {% load i18n %}
 
+{% block title %}
+Email Example
+{% endblock %}
+
 {% block main %}
 <p>This is Actu.</p>
+{% endblock %}
+
+{% block unsubscribe %}
+<a href="https://example.com">Unsubscribe link</a>
 {% endblock %}

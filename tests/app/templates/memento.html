@@ -1,6 +1,12 @@
 {% extends "epflmail/default.html" %}
 {% load i18n %}
 
+{% block online %}
+  {% with ONLINE_VERSION_LINK="https://memento.epfl.ch" %}
+    {% include 'epflmail/includes/online.inc.html'%}
+  {% endwith %}
+{% endblock %}
+
 {% block main %}
 <p>This is Memento.</p>
 {% endblock %}
