@@ -7,7 +7,7 @@ from django.test import TestCase
 
 
 class TestsEpflMailTemplates(TestCase):
-    def test_send_epflmail_without_title(self):
+    def test_send_epflmail_for_actu(self):
 
         html = render_to_string("actu.html")
         email = EmailMessage(
@@ -21,8 +21,9 @@ class TestsEpflMailTemplates(TestCase):
         self.assertIn("logo.png", mail.outbox[0].body)
         self.assertIn("EPFL, all rights reserved", mail.outbox[0].body)
         self.assertNotIn("square.png", mail.outbox[0].body)
+        self.assertNotIn("Online version", mail.outbox[0].body)
 
-    def test_send_epflmail_with_title(self):
+    def test_send_epflmail_for_memento(self):
 
         html = render_to_string("memento.html", {"APP_TITLE": "Memento"})
         email = EmailMessage(
@@ -36,3 +37,4 @@ class TestsEpflMailTemplates(TestCase):
         self.assertIn("logo.png", mail.outbox[0].body)
         self.assertIn("EPFL, all rights reserved", mail.outbox[0].body)
         self.assertIn("square.png", mail.outbox[0].body)
+        self.assertIn("Online version", mail.outbox[0].body)
