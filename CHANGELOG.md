@@ -1,6 +1,16 @@
 Changelog
 =========
 
+### v0.1.0 / 2022-10-12
+
+##### Features
+
+  - Add Django 3.2 support (#11).
+
+##### Misc
+
+  - Update Web2018 from 5.2.0 to 6.1.1 (#15).
+
 ### v0.0.2 / 2021-07-21
 
 ##### Features
