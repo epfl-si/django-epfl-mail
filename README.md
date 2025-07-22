@@ -11,7 +11,7 @@ A Django application with templates for emails.
 Requirements
 ------------
 
-- Python 3.6 or later
+- Python 3.7 or later
 - Django 2.2 or 3.2
 
 Installation
