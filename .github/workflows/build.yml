@@ -7,7 +7,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-22.04
-    name: Python ${{ matrix.python }} / Django ${{ matrix.django }} CI
+    name: Python ${{ matrix.python }}
 
     strategy:
       fail-fast: false
@@ -26,8 +26,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip setuptools
-          python -m pip install --upgrade tox tox-gh-actions
+          python -m pip install --upgrade pip setuptools tox
 
       - name: Tox tests
         run: |
