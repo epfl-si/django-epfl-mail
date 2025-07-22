@@ -73,7 +73,7 @@ Email Example
 {% endblock %}
 ```
 
-[github-actions-image]: https://github.com/epfl-si/django-epfl-mail/workflows/Build/badge.svg?branch=main
+[github-actions-image]: https://github.com/epfl-si/django-epfl-mail/actions/workflows/build.yml/badge.svg?branch=main
 [github-actions-url]: https://github.com/epfl-si/django-epfl-mail/actions
 
 [codecov-image]:https://codecov.io/gh/epfl-si/django-epfl-mail/branch/main/graph/badge.svg
