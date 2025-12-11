@@ -1,58 +1,74 @@
-Changelog
-=========
+# Changelog
 
-### v1.0.0 / 2022-10-18
+## v2.0.0 / 2025-12-11
 
-##### Backwards Incompatible Changes
+### Backwards Incompatible Changes
 
-  - Drop Python 2.7 support (#22).
-  - Drop Python 3.5 support (#22).
-  - Drop Django 1.11 support (#22).
+- Drop Python 3.6 support (#32).
 
-##### Features
+### Features
 
-  - Add Python 3.10 support (#28).
+- Add Python 3.11 support (#37).
+- Add Django 4.2 support (#35).
 
-##### Misc
+### Misc
 
-  - Lint via tox (#26).
-  - Update pytest ecosystem (#24).
-  - Update flake8 from 3.9.2 to 5.0.4 (#30)
-  - Update codecov-action from v1 to v3 (#14).
-  - Update checkout action from v2 to v3 (#19).
-  - Update setup-python action from v2 to v4 (#20).
+- Fix GitHub Actions badge (#36).
+- Simplify tox tests (#34).
+- Update codecov/codecov-action to v4 (#33).
 
-### v0.1.0 / 2022-10-12
+## v1.0.0 / 2022-10-18
 
-##### Features
+### Backwards Incompatible Changes
 
-  - Add Django 3.2 support (#11).
+- Drop Python 2.7 support (#22).
+- Drop Python 3.5 support (#22).
+- Drop Django 1.11 support (#22).
 
-##### Misc
+### Features
 
-  - Update Web2018 from 5.2.0 to 6.1.1 (#15).
+- Add Python 3.10 support (#28).
 
-### v0.0.2 / 2021-07-21
+### Misc
 
-##### Features
+- Lint via tox (#26).
+- Update pytest ecosystem (#24).
+- Update flake8 from 3.9.2 to 5.0.4 (#30)
+- Update codecov-action from v1 to v3 (#14).
+- Update checkout action from v2 to v3 (#19).
+- Update setup-python action from v2 to v4 (#20).
 
-  - Add online template (#2).
+## v0.1.0 / 2022-10-12
 
-##### Improvements
+### Features
 
-  - Add alt attribute for images (#6).
+- Add Django 3.2 support (#11).
 
-##### Fixes
+### Misc
 
-  - Fix blue links in GMail (#8).
-  - Fix typo in logo.inc.html (#7).
+- Update Web2018 from 5.2.0 to 6.1.1 (#15).
 
-##### Misc
+## v0.0.2 / 2021-07-21
 
-  - Add release workflow to PyPI (#5).
-  - Update black from 21.5b2 to 21.6b0 (#3).
-  - Update isort from 5.8.0 to 5.9.2 (#4).
+### Features
 
-### v0.0.1 / 2021-06-17
+ - Add online template (#2).
 
-  - First version, released on an unsuspecting world.
+### Improvements
+
+- Add alt attribute for images (#6).
+
+### Fixes
+
+- Fix blue links in GMail (#8).
+- Fix typo in logo.inc.html (#7).
+
+### Misc
+
+- Add release workflow to PyPI (#5).
+- Update black from 21.5b2 to 21.6b0 (#3).
+- Update isort from 5.8.0 to 5.9.2 (#4).
+
+## v0.0.1 / 2021-06-17
+
+- First version, released on an unsuspecting world.
