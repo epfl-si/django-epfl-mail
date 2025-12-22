@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.1.0 / 2025-12-22
+
+### Features
+
+- Add Django 5.2 support (#49).
+- Add Python 3.12 support (#43).
+
+### Misc
+
+- Add targets clean, lint and test (#48).
+- Run linter only on latest Python (#47).
+- Refactor requirements (#46).
+- Init Makefile (#45).
+- Add html report (#44).
+- Modernize packaging (#42).
+- Update codecov/codecov-action to v5 (#41).
+- Update actions/setup-python to v6 (#40).
+- Update actions/checkout to v5 (#39).
+
 ## v2.0.0 / 2025-12-11
 
 ### Backwards Incompatible Changes
