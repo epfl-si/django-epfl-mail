@@ -1,0 +1,6 @@
+# ⚠️ Should run on every supported Python/Django combination.
+
+pytest>=7.0.0
+pytest-cov
+pytest-django
+pytest-pythonpath
