@@ -1,4 +1,4 @@
-PYTHON_VERSION=3.13.3
+PYTHON_VERSION=3.14.2
 PYTHON_VENV=django-epfl-mail
 
 .PHONY: help
