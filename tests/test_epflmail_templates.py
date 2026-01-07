@@ -1,4 +1,4 @@
-# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, 2021-2025.
+# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, 2021-2026.
 
 from django.core import mail
 from django.core.mail.message import EmailMessage

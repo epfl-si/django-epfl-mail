@@ -1,5 +1,28 @@
 # Changelog
 
+## v2.2.0 / 2026-01-07
+
+### Features
+
+- Add Python 3.14 support (#59).
+- Add Python 3.13 support (#54).
+
+### Fixes
+
+- Add Django as dependency (#62).
+
+### Misc
+
+- Launch pytest from VS Code (#61).
+- Update black to 25.12.0 (#60).
+- Update flake8 to 7.3.0 (#58).
+- Update isort to 7.0.0 (#57).
+- Add VS Code settings (#56).
+- Add VS Code recommended extensions (#55).
+- Improve CONTRIBUTING (#53).
+- Add targets setup, venv, installdeps and cleanall (#52).
+- Publish to PyPI with OIDC (#51).
+
 ## v2.1.0 / 2025-12-22
 
 ### Features
